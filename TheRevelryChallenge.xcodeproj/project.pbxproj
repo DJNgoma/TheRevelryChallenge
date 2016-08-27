@@ -14,8 +14,9 @@
 		169FF4671D718605002207FB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 169FF45E1D718605002207FB /* Info.plist */; };
 		169FF4681D718605002207FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169FF4601D718605002207FB /* LaunchScreen.storyboard */; };
 		169FF4691D718605002207FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169FF4621D718605002207FB /* Main.storyboard */; };
+		169FF46B1D718671002207FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF46A1D718671002207FB /* Constants.swift */; };
+		169FF46E1D7186EC002207FB /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 169FF46D1D7186EC002207FB /* tasks.json */; };
 		A4AE076E2A2BD9BC62B0665E /* Pods_TheRevelryChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC53E79FB2737C3F26FD2566 /* Pods_TheRevelryChallenge.framework */; };
-		DF5EC3E89DE13CCBC8B305F4 /* Pods_TheRevelryChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6154770C89E5EB5CC2343D59 /* Pods_TheRevelryChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +40,9 @@
 		169FF45E1D718605002207FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		169FF4611D718605002207FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		169FF4631D718605002207FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		169FF46A1D718671002207FB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		169FF46D1D7186EC002207FB /* tasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
 		6154770C89E5EB5CC2343D59 /* Pods_TheRevelryChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheRevelryChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		889C51B7649CA40F261036D2 /* Pods-TheRevelryChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRevelryChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheRevelryChallengeTests/Pods-TheRevelryChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8C80A80DDBD4A35AEB59D86D /* Pods-TheRevelryChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRevelryChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheRevelryChallengeTests/Pods-TheRevelryChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F3E87A4C2AB0EFDC1634B4D /* Pods-TheRevelryChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRevelryChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheRevelryChallenge/Pods-TheRevelryChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		A7F2F771AE6A164F102929FE /* Pods-TheRevelryChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRevelryChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheRevelryChallenge/Pods-TheRevelryChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		DC53E79FB2737C3F26FD2566 /* Pods_TheRevelryChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheRevelryChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF5EC3E89DE13CCBC8B305F4 /* Pods_TheRevelryChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +93,7 @@
 				169FF45A1D718605002207FB /* Models */,
 				169FF45F1D718605002207FB /* Views */,
 				169FF4581D718605002207FB /* Controllers */,
+				169FF46C1D7186EC002207FB /* Stores */,
 				169FF45B1D718605002207FB /* Supporting Files */,
 			);
 			path = TheRevelryChallenge;
@@ -125,6 +126,7 @@
 		169FF45B1D718605002207FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				169FF46A1D718671002207FB /* Constants.swift */,
 				169FF45C1D718605002207FB /* AppDelegate.swift */,
 				169FF45D1D718605002207FB /* Assets.xcassets */,
 				169FF45E1D718605002207FB /* Info.plist */,
@@ -141,13 +143,19 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		169FF46C1D7186EC002207FB /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				169FF46D1D7186EC002207FB /* tasks.json */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
 		19194C0BA3EC95D4163E6B45 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				9F3E87A4C2AB0EFDC1634B4D /* Pods-TheRevelryChallenge.debug.xcconfig */,
 				A7F2F771AE6A164F102929FE /* Pods-TheRevelryChallenge.release.xcconfig */,
-				889C51B7649CA40F261036D2 /* Pods-TheRevelryChallengeTests.debug.xcconfig */,
-				8C80A80DDBD4A35AEB59D86D /* Pods-TheRevelryChallengeTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -252,6 +260,7 @@
 				169FF4671D718605002207FB /* Info.plist in Resources */,
 				169FF4661D718605002207FB /* Assets.xcassets in Resources */,
 				169FF4691D718605002207FB /* Main.storyboard in Resources */,
+				169FF46E1D7186EC002207FB /* tasks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +373,7 @@
 			files = (
 				169FF4651D718605002207FB /* AppDelegate.swift in Sources */,
 				169FF4641D718605002207FB /* ViewController.swift in Sources */,
+				169FF46B1D718671002207FB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +526,6 @@
 		};
 		168DAF751D7182C200D12F0B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 889C51B7649CA40F261036D2 /* Pods-TheRevelryChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TheRevelryChallengeTests/Info.plist;
@@ -529,7 +538,6 @@
 		};
 		168DAF761D7182C200D12F0B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C80A80DDBD4A35AEB59D86D /* Pods-TheRevelryChallengeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TheRevelryChallengeTests/Info.plist;

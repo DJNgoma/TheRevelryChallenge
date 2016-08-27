@@ -1,0 +1,19 @@
+{
+   "data":[
+      {
+         "id":1,
+         "name":"First task",
+         "state": 1
+      },
+      {
+         "id":2,
+         "name":"Second task",
+         "state": 0
+      },
+      {
+         "id":3,
+         "name":"Third task",
+         "state": 1
+      }
+   ]
+}
