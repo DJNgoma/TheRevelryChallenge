@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		168DAF581D7182C200D12F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DAF571D7182C200D12F0B /* AppDelegate.swift */; };
-		168DAF5A1D7182C200D12F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DAF591D7182C200D12F0B /* ViewController.swift */; };
-		168DAF5D1D7182C200D12F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168DAF5B1D7182C200D12F0B /* Main.storyboard */; };
-		168DAF5F1D7182C200D12F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 168DAF5E1D7182C200D12F0B /* Assets.xcassets */; };
-		168DAF621D7182C200D12F0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168DAF601D7182C200D12F0B /* LaunchScreen.storyboard */; };
 		168DAF6D1D7182C200D12F0B /* TheRevelryChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DAF6C1D7182C200D12F0B /* TheRevelryChallengeTests.swift */; };
+		169FF4641D718605002207FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF4591D718605002207FB /* ViewController.swift */; };
+		169FF4651D718605002207FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF45C1D718605002207FB /* AppDelegate.swift */; };
+		169FF4661D718605002207FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169FF45D1D718605002207FB /* Assets.xcassets */; };
+		169FF4671D718605002207FB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 169FF45E1D718605002207FB /* Info.plist */; };
+		169FF4681D718605002207FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169FF4601D718605002207FB /* LaunchScreen.storyboard */; };
+		169FF4691D718605002207FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169FF4621D718605002207FB /* Main.storyboard */; };
 		A4AE076E2A2BD9BC62B0665E /* Pods_TheRevelryChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC53E79FB2737C3F26FD2566 /* Pods_TheRevelryChallenge.framework */; };
 		DF5EC3E89DE13CCBC8B305F4 /* Pods_TheRevelryChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6154770C89E5EB5CC2343D59 /* Pods_TheRevelryChallengeTests.framework */; };
 /* End PBXBuildFile section */
@@ -29,15 +30,15 @@
 
 /* Begin PBXFileReference section */
 		168DAF541D7182C200D12F0B /* TheRevelryChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheRevelryChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		168DAF571D7182C200D12F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		168DAF591D7182C200D12F0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		168DAF5C1D7182C200D12F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		168DAF5E1D7182C200D12F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		168DAF611D7182C200D12F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		168DAF631D7182C200D12F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		168DAF681D7182C200D12F0B /* TheRevelryChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheRevelryChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		168DAF6C1D7182C200D12F0B /* TheRevelryChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheRevelryChallengeTests.swift; sourceTree = "<group>"; };
 		168DAF6E1D7182C200D12F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169FF4591D718605002207FB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		169FF45C1D718605002207FB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		169FF45D1D718605002207FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		169FF45E1D718605002207FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169FF4611D718605002207FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		169FF4631D718605002207FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6154770C89E5EB5CC2343D59 /* Pods_TheRevelryChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheRevelryChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		889C51B7649CA40F261036D2 /* Pods-TheRevelryChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRevelryChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheRevelryChallengeTests/Pods-TheRevelryChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C80A80DDBD4A35AEB59D86D /* Pods-TheRevelryChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRevelryChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheRevelryChallengeTests/Pods-TheRevelryChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,12 +90,10 @@
 		168DAF561D7182C200D12F0B /* TheRevelryChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				168DAF571D7182C200D12F0B /* AppDelegate.swift */,
-				168DAF591D7182C200D12F0B /* ViewController.swift */,
-				168DAF5B1D7182C200D12F0B /* Main.storyboard */,
-				168DAF5E1D7182C200D12F0B /* Assets.xcassets */,
-				168DAF601D7182C200D12F0B /* LaunchScreen.storyboard */,
-				168DAF631D7182C200D12F0B /* Info.plist */,
+				169FF45A1D718605002207FB /* Models */,
+				169FF45F1D718605002207FB /* Views */,
+				169FF4581D718605002207FB /* Controllers */,
+				169FF45B1D718605002207FB /* Supporting Files */,
 			);
 			path = TheRevelryChallenge;
 			sourceTree = "<group>";
@@ -106,6 +105,40 @@
 				168DAF6E1D7182C200D12F0B /* Info.plist */,
 			);
 			path = TheRevelryChallengeTests;
+			sourceTree = "<group>";
+		};
+		169FF4581D718605002207FB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				169FF4591D718605002207FB /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		169FF45A1D718605002207FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		169FF45B1D718605002207FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				169FF45C1D718605002207FB /* AppDelegate.swift */,
+				169FF45D1D718605002207FB /* Assets.xcassets */,
+				169FF45E1D718605002207FB /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		169FF45F1D718605002207FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				169FF4601D718605002207FB /* LaunchScreen.storyboard */,
+				169FF4621D718605002207FB /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		19194C0BA3EC95D4163E6B45 /* Pods */ = {
@@ -215,9 +248,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				168DAF621D7182C200D12F0B /* LaunchScreen.storyboard in Resources */,
-				168DAF5F1D7182C200D12F0B /* Assets.xcassets in Resources */,
-				168DAF5D1D7182C200D12F0B /* Main.storyboard in Resources */,
+				169FF4681D718605002207FB /* LaunchScreen.storyboard in Resources */,
+				169FF4671D718605002207FB /* Info.plist in Resources */,
+				169FF4661D718605002207FB /* Assets.xcassets in Resources */,
+				169FF4691D718605002207FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +362,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				168DAF5A1D7182C200D12F0B /* ViewController.swift in Sources */,
-				168DAF581D7182C200D12F0B /* AppDelegate.swift in Sources */,
+				169FF4651D718605002207FB /* AppDelegate.swift in Sources */,
+				169FF4641D718605002207FB /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,20 +386,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		168DAF5B1D7182C200D12F0B /* Main.storyboard */ = {
+		169FF4601D718605002207FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				168DAF5C1D7182C200D12F0B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		168DAF601D7182C200D12F0B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				168DAF611D7182C200D12F0B /* Base */,
+				169FF4611D718605002207FB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		169FF4621D718605002207FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				169FF4631D718605002207FB /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
