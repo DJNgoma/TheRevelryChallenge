@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FDEC35D7A57C175F6DA532B17CCB04E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		599728C49E3BAFB75BAEB3EFFABACD17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		82464ABC9B45530004DEFBC2005A2209 /* Pods-TheRevelryChallengeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 523BBA058D8B1D331E8591FCD77D1CE8 /* Pods-TheRevelryChallengeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E0A113ED97F22E43E3557C4E9D4C288 /* Pods-TheRevelryChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F029CC11815AECF69107B9DBB8861862 /* Pods-TheRevelryChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D959A3F1C3AA149CA6B15CC4AE71774 /* Pods-TheRevelryChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0F87552316B46F5126AC0E17907D0 /* Pods-TheRevelryChallenge-dummy.m */; };
+		A59DCA8C1A9DF8DD4E34CE0F8A5E92DC /* Pods-TheRevelryChallengeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4506DBCBEBF2ED281EBED332191B76F3 /* Pods-TheRevelryChallengeTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D5A91F503B83885B5242317CBCDA768 /* Pods-TheRevelryChallengeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TheRevelryChallengeTests.modulemap"; sourceTree = "<group>"; };
+		0F1CE79B734837AAB5B87E6764AD0A3A /* Pods-TheRevelryChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheRevelryChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		2D36454B1720C2F8471F787718D744A6 /* Pods-TheRevelryChallenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheRevelryChallenge-frameworks.sh"; sourceTree = "<group>"; };
+		2FB0F87552316B46F5126AC0E17907D0 /* Pods-TheRevelryChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheRevelryChallenge-dummy.m"; sourceTree = "<group>"; };
+		3897A5A10F1FBA46910931C1A84674F9 /* Pods-TheRevelryChallenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheRevelryChallenge-resources.sh"; sourceTree = "<group>"; };
+		4506DBCBEBF2ED281EBED332191B76F3 /* Pods-TheRevelryChallengeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheRevelryChallengeTests-dummy.m"; sourceTree = "<group>"; };
+		45C0EB2CEC17E0281B41826A2A7CFEAE /* Pods_TheRevelryChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheRevelryChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		523BBA058D8B1D331E8591FCD77D1CE8 /* Pods-TheRevelryChallengeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheRevelryChallengeTests-umbrella.h"; sourceTree = "<group>"; };
+		6154CB86FAC16CFCC73DFA48377400AD /* Pods-TheRevelryChallengeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheRevelryChallengeTests-frameworks.sh"; sourceTree = "<group>"; };
+		64B9CD28FE181D56DF38D1622A620365 /* Pods-TheRevelryChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheRevelryChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		694C03D0F78C85BAFA3AC06BF2F3F3E1 /* Pods-TheRevelryChallengeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheRevelryChallengeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6F8A454741D3DFE5066CC776E2634B38 /* Pods-TheRevelryChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheRevelryChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		79EA8F506918729E39571208587EC462 /* Pods-TheRevelryChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheRevelryChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		810B70CCD542A1FCE16C3145531F1777 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		984B998E6E1FB2B6DB774F595B423322 /* Pods-TheRevelryChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TheRevelryChallenge.modulemap"; sourceTree = "<group>"; };
+		9CDDD62EE13AD0C654D02ADE2BB60B8D /* Pods-TheRevelryChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheRevelryChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A53451CB3A54C8013C5EE6600C22BAB7 /* Pods_TheRevelryChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheRevelryChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE28BAF03B1B6EC26729072F9766210 /* Pods-TheRevelryChallengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheRevelryChallengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B046605C934D14E03C849F1BBCC4D0D2 /* Pods-TheRevelryChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheRevelryChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB54DE5B03ADB823F22C1C244962DC5D /* Pods-TheRevelryChallengeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheRevelryChallengeTests-resources.sh"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F029CC11815AECF69107B9DBB8861862 /* Pods-TheRevelryChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheRevelryChallenge-umbrella.h"; sourceTree = "<group>"; };
+		F475E80F189A18FB4464A123D99D555B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28664399FFE1A06F459507D8E9719126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599728C49E3BAFB75BAEB3EFFABACD17 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CA014C00753B549177244D4D905B02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FDEC35D7A57C175F6DA532B17CCB04E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E2CF2E98ADF9ADDFA41300FD78581A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A53451CB3A54C8013C5EE6600C22BAB7 /* Pods_TheRevelryChallenge.framework */,
+				45C0EB2CEC17E0281B41826A2A7CFEAE /* Pods_TheRevelryChallengeTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		63719CDF0878AACC212640A1DC8A64B1 /* Pods-TheRevelryChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F475E80F189A18FB4464A123D99D555B /* Info.plist */,
+				0D5A91F503B83885B5242317CBCDA768 /* Pods-TheRevelryChallengeTests.modulemap */,
+				694C03D0F78C85BAFA3AC06BF2F3F3E1 /* Pods-TheRevelryChallengeTests-acknowledgements.markdown */,
+				ADE28BAF03B1B6EC26729072F9766210 /* Pods-TheRevelryChallengeTests-acknowledgements.plist */,
+				4506DBCBEBF2ED281EBED332191B76F3 /* Pods-TheRevelryChallengeTests-dummy.m */,
+				6154CB86FAC16CFCC73DFA48377400AD /* Pods-TheRevelryChallengeTests-frameworks.sh */,
+				BB54DE5B03ADB823F22C1C244962DC5D /* Pods-TheRevelryChallengeTests-resources.sh */,
+				523BBA058D8B1D331E8591FCD77D1CE8 /* Pods-TheRevelryChallengeTests-umbrella.h */,
+				64B9CD28FE181D56DF38D1622A620365 /* Pods-TheRevelryChallengeTests.debug.xcconfig */,
+				9CDDD62EE13AD0C654D02ADE2BB60B8D /* Pods-TheRevelryChallengeTests.release.xcconfig */,
+			);
+			name = "Pods-TheRevelryChallengeTests";
+			path = "Target Support Files/Pods-TheRevelryChallengeTests";
+			sourceTree = "<group>";
+		};
+		7B762B01521D0ABB72BFF3C6DB8F4572 /* Pods-TheRevelryChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				810B70CCD542A1FCE16C3145531F1777 /* Info.plist */,
+				984B998E6E1FB2B6DB774F595B423322 /* Pods-TheRevelryChallenge.modulemap */,
+				B046605C934D14E03C849F1BBCC4D0D2 /* Pods-TheRevelryChallenge-acknowledgements.markdown */,
+				0F1CE79B734837AAB5B87E6764AD0A3A /* Pods-TheRevelryChallenge-acknowledgements.plist */,
+				2FB0F87552316B46F5126AC0E17907D0 /* Pods-TheRevelryChallenge-dummy.m */,
+				2D36454B1720C2F8471F787718D744A6 /* Pods-TheRevelryChallenge-frameworks.sh */,
+				3897A5A10F1FBA46910931C1A84674F9 /* Pods-TheRevelryChallenge-resources.sh */,
+				F029CC11815AECF69107B9DBB8861862 /* Pods-TheRevelryChallenge-umbrella.h */,
+				6F8A454741D3DFE5066CC776E2634B38 /* Pods-TheRevelryChallenge.debug.xcconfig */,
+				79EA8F506918729E39571208587EC462 /* Pods-TheRevelryChallenge.release.xcconfig */,
+			);
+			name = "Pods-TheRevelryChallenge";
+			path = "Target Support Files/Pods-TheRevelryChallenge";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				1E2CF2E98ADF9ADDFA41300FD78581A7 /* Products */,
+				FF70354C1F6B6730BA86C686A9533F7B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF70354C1F6B6730BA86C686A9533F7B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B762B01521D0ABB72BFF3C6DB8F4572 /* Pods-TheRevelryChallenge */,
+				63719CDF0878AACC212640A1DC8A64B1 /* Pods-TheRevelryChallengeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		714962407F72CEC0E10364FA45C82619 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82464ABC9B45530004DEFBC2005A2209 /* Pods-TheRevelryChallengeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75CE8F405D0815D2878F90C341692B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0A113ED97F22E43E3557C4E9D4C288 /* Pods-TheRevelryChallenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BE7EC02506D9420BFAA7A07F9A624C35 /* Pods-TheRevelryChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCE5B33605B2557BE614EB480AD71671 /* Build configuration list for PBXNativeTarget "Pods-TheRevelryChallengeTests" */;
+			buildPhases = (
+				9634E6C2F918A1BD988CCCE6E47E3B2E /* Sources */,
+				48CA014C00753B549177244D4D905B02 /* Frameworks */,
+				714962407F72CEC0E10364FA45C82619 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TheRevelryChallengeTests";
+			productName = "Pods-TheRevelryChallengeTests";
+			productReference = 45C0EB2CEC17E0281B41826A2A7CFEAE /* Pods_TheRevelryChallengeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5DEF6725E629009EE9FEF11C79F1073 /* Pods-TheRevelryChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA0E3F91FAB8645D75AD8B60E1A80528 /* Build configuration list for PBXNativeTarget "Pods-TheRevelryChallenge" */;
+			buildPhases = (
+				D818EFEF9920945188055360452C497C /* Sources */,
+				28664399FFE1A06F459507D8E9719126 /* Frameworks */,
+				F75CE8F405D0815D2878F90C341692B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TheRevelryChallenge";
+			productName = "Pods-TheRevelryChallenge";
+			productReference = A53451CB3A54C8013C5EE6600C22BAB7 /* Pods_TheRevelryChallenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1E2CF2E98ADF9ADDFA41300FD78581A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5DEF6725E629009EE9FEF11C79F1073 /* Pods-TheRevelryChallenge */,
+				BE7EC02506D9420BFAA7A07F9A624C35 /* Pods-TheRevelryChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9634E6C2F918A1BD988CCCE6E47E3B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59DCA8C1A9DF8DD4E34CE0F8A5E92DC /* Pods-TheRevelryChallengeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D818EFEF9920945188055360452C497C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D959A3F1C3AA149CA6B15CC4AE71774 /* Pods-TheRevelryChallenge-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AFCAD6E0206DF1F223038B639BB3432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64B9CD28FE181D56DF38D1622A620365 /* Pods-TheRevelryChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TheRevelryChallengeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheRevelryChallengeTests/Pods-TheRevelryChallengeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TheRevelryChallengeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AC717B5FB182C652E3413084605FE2C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79EA8F506918729E39571208587EC462 /* Pods-TheRevelryChallenge.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TheRevelryChallenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheRevelryChallenge/Pods-TheRevelryChallenge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TheRevelryChallenge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E0C4CFA7B8BBE61473DB3AEF10B2545A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F8A454741D3DFE5066CC776E2634B38 /* Pods-TheRevelryChallenge.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TheRevelryChallenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheRevelryChallenge/Pods-TheRevelryChallenge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TheRevelryChallenge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F18A55219E0A7AA330D1D04AA4FBA397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CDDD62EE13AD0C654D02ADE2BB60B8D /* Pods-TheRevelryChallengeTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TheRevelryChallengeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheRevelryChallengeTests/Pods-TheRevelryChallengeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TheRevelryChallengeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA0E3F91FAB8645D75AD8B60E1A80528 /* Build configuration list for PBXNativeTarget "Pods-TheRevelryChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0C4CFA7B8BBE61473DB3AEF10B2545A /* Debug */,
+				AC717B5FB182C652E3413084605FE2C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCE5B33605B2557BE614EB480AD71671 /* Build configuration list for PBXNativeTarget "Pods-TheRevelryChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AFCAD6E0206DF1F223038B639BB3432 /* Debug */,
+				F18A55219E0A7AA330D1D04AA4FBA397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
