@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct Config {
+    
+    static let tasksUrl = "https://dl.dropboxusercontent.com/u/6890301/tasks.json"
+    
+}

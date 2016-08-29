@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		168DAF6D1D7182C200D12F0B /* TheRevelryChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DAF6C1D7182C200D12F0B /* TheRevelryChallengeTests.swift */; };
-		169FF4641D718605002207FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF4591D718605002207FB /* ViewController.swift */; };
 		169FF4651D718605002207FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF45C1D718605002207FB /* AppDelegate.swift */; };
 		169FF4661D718605002207FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169FF45D1D718605002207FB /* Assets.xcassets */; };
 		169FF4671D718605002207FB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 169FF45E1D718605002207FB /* Info.plist */; };
 		169FF4681D718605002207FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169FF4601D718605002207FB /* LaunchScreen.storyboard */; };
 		169FF4691D718605002207FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169FF4621D718605002207FB /* Main.storyboard */; };
 		169FF46B1D718671002207FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF46A1D718671002207FB /* Constants.swift */; };
-		169FF46E1D7186EC002207FB /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 169FF46D1D7186EC002207FB /* tasks.json */; };
+		169FF4701D718BEC002207FB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF46F1D718BEC002207FB /* Task.swift */; };
+		169FF4721D718C0F002207FB /* TasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF4711D718C0F002207FB /* TasksController.swift */; };
+		169FF47A1D719D98002207FB /* DoneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF4791D719D98002207FB /* DoneTableViewController.swift */; };
+		169FF47C1D719DCB002207FB /* PendingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF47B1D719DCB002207FB /* PendingTableViewController.swift */; };
+		169FF47E1D71A282002207FB /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF47D1D71A282002207FB /* EditTaskViewController.swift */; };
+		169FF4821D72A4DF002207FB /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF4811D72A4DF002207FB /* TaskTableViewCell.swift */; };
+		169FF4841D72B45F002207FB /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 169FF4831D72B45F002207FB /* tasks.json */; };
 		A4AE076E2A2BD9BC62B0665E /* Pods_TheRevelryChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC53E79FB2737C3F26FD2566 /* Pods_TheRevelryChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,14 +39,19 @@
 		168DAF681D7182C200D12F0B /* TheRevelryChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheRevelryChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		168DAF6C1D7182C200D12F0B /* TheRevelryChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheRevelryChallengeTests.swift; sourceTree = "<group>"; };
 		168DAF6E1D7182C200D12F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		169FF4591D718605002207FB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		169FF45C1D718605002207FB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		169FF45D1D718605002207FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		169FF45E1D718605002207FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169FF45E1D718605002207FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		169FF4611D718605002207FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		169FF4631D718605002207FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		169FF46A1D718671002207FB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		169FF46D1D7186EC002207FB /* tasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
+		169FF46F1D718BEC002207FB /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		169FF4711D718C0F002207FB /* TasksController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksController.swift; sourceTree = "<group>"; };
+		169FF4791D719D98002207FB /* DoneTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneTableViewController.swift; sourceTree = "<group>"; };
+		169FF47B1D719DCB002207FB /* PendingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingTableViewController.swift; sourceTree = "<group>"; };
+		169FF47D1D71A282002207FB /* EditTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
+		169FF4811D72A4DF002207FB /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		169FF4831D72B45F002207FB /* tasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
 		6154770C89E5EB5CC2343D59 /* Pods_TheRevelryChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheRevelryChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F3E87A4C2AB0EFDC1634B4D /* Pods-TheRevelryChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRevelryChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheRevelryChallenge/Pods-TheRevelryChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		A7F2F771AE6A164F102929FE /* Pods-TheRevelryChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRevelryChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheRevelryChallenge/Pods-TheRevelryChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +104,7 @@
 				169FF45F1D718605002207FB /* Views */,
 				169FF4581D718605002207FB /* Controllers */,
 				169FF46C1D7186EC002207FB /* Stores */,
+				169FF4741D7198BA002207FB /* Helpers */,
 				169FF45B1D718605002207FB /* Supporting Files */,
 			);
 			path = TheRevelryChallenge;
@@ -111,7 +122,9 @@
 		169FF4581D718605002207FB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				169FF4591D718605002207FB /* ViewController.swift */,
+				169FF47B1D719DCB002207FB /* PendingTableViewController.swift */,
+				169FF4791D719D98002207FB /* DoneTableViewController.swift */,
+				169FF47D1D71A282002207FB /* EditTaskViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -119,6 +132,8 @@
 		169FF45A1D718605002207FB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				169FF46F1D718BEC002207FB /* Task.swift */,
+				169FF4711D718C0F002207FB /* TasksController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -137,8 +152,9 @@
 		169FF45F1D718605002207FB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				169FF4601D718605002207FB /* LaunchScreen.storyboard */,
 				169FF4621D718605002207FB /* Main.storyboard */,
+				169FF4601D718605002207FB /* LaunchScreen.storyboard */,
+				169FF4811D72A4DF002207FB /* TaskTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,8 +162,16 @@
 		169FF46C1D7186EC002207FB /* Stores */ = {
 			isa = PBXGroup;
 			children = (
-				169FF46D1D7186EC002207FB /* tasks.json */,
+				169FF4831D72B45F002207FB /* tasks.json */,
 			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		169FF4741D7198BA002207FB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
 			path = Stores;
 			sourceTree = "<group>";
 		};
@@ -260,7 +284,7 @@
 				169FF4671D718605002207FB /* Info.plist in Resources */,
 				169FF4661D718605002207FB /* Assets.xcassets in Resources */,
 				169FF4691D718605002207FB /* Main.storyboard in Resources */,
-				169FF46E1D7186EC002207FB /* tasks.json in Resources */,
+				169FF4841D72B45F002207FB /* tasks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,9 +395,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169FF4821D72A4DF002207FB /* TaskTableViewCell.swift in Sources */,
+				169FF4701D718BEC002207FB /* Task.swift in Sources */,
+				169FF47E1D71A282002207FB /* EditTaskViewController.swift in Sources */,
+				169FF4721D718C0F002207FB /* TasksController.swift in Sources */,
 				169FF4651D718605002207FB /* AppDelegate.swift in Sources */,
-				169FF4641D718605002207FB /* ViewController.swift in Sources */,
 				169FF46B1D718671002207FB /* Constants.swift in Sources */,
+				169FF47A1D719D98002207FB /* DoneTableViewController.swift in Sources */,
+				169FF47C1D719DCB002207FB /* PendingTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
