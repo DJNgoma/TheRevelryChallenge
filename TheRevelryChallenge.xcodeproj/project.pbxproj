@@ -17,7 +17,6 @@
 		169FF4721D718C0F002207FB /* TasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF4711D718C0F002207FB /* TasksController.swift */; };
 		169FF47A1D719D98002207FB /* DoneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF4791D719D98002207FB /* DoneTableViewController.swift */; };
 		169FF47C1D719DCB002207FB /* PendingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF47B1D719DCB002207FB /* PendingTableViewController.swift */; };
-		169FF47E1D71A282002207FB /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF47D1D71A282002207FB /* EditTaskViewController.swift */; };
 		169FF4821D72A4DF002207FB /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF4811D72A4DF002207FB /* TaskTableViewCell.swift */; };
 		169FF4841D72B45F002207FB /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 169FF4831D72B45F002207FB /* tasks.json */; };
 		169FF4861D73EF36002207FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169FF4851D73EF36002207FB /* Assets.xcassets */; };
@@ -48,7 +47,6 @@
 		169FF4711D718C0F002207FB /* TasksController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksController.swift; sourceTree = "<group>"; };
 		169FF4791D719D98002207FB /* DoneTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneTableViewController.swift; sourceTree = "<group>"; };
 		169FF47B1D719DCB002207FB /* PendingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingTableViewController.swift; sourceTree = "<group>"; };
-		169FF47D1D71A282002207FB /* EditTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 		169FF4811D72A4DF002207FB /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		169FF4831D72B45F002207FB /* tasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
 		169FF4851D73EF36002207FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 			children = (
 				169FF47B1D719DCB002207FB /* PendingTableViewController.swift */,
 				169FF4791D719D98002207FB /* DoneTableViewController.swift */,
-				169FF47D1D71A282002207FB /* EditTaskViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -445,7 +442,6 @@
 			files = (
 				169FF4821D72A4DF002207FB /* TaskTableViewCell.swift in Sources */,
 				169FF4701D718BEC002207FB /* Task.swift in Sources */,
-				169FF47E1D71A282002207FB /* EditTaskViewController.swift in Sources */,
 				169FF4721D718C0F002207FB /* TasksController.swift in Sources */,
 				169FF4651D718605002207FB /* AppDelegate.swift in Sources */,
 				169FF46B1D718671002207FB /* Constants.swift in Sources */,
