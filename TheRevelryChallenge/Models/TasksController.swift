@@ -7,35 +7,32 @@
 //
 
 import Foundation
+import Alamofire
 import SwiftyJSON
 
 class TasksController {
     
     var tasks:[Task] = []
     
+    init() {
+        retrieveFromNetwork()
+    }
+    
     func retrieveFromNetwork() {
-        let requestURL: NSURL = NSURL(string: Config.tasksUrl)!
-        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
-        let session = NSURLSession.sharedSession()
-        let task = session.dataTaskWithRequest(urlRequest) {
-            (data, response, error) -> Void in
-            
-            let httpResponse = response as! NSHTTPURLResponse
-            let statusCode = httpResponse.statusCode
-            
-            if (statusCode == 200) {
-                let json = JSON(data: data!)["data"].arrayValue
-                self.tasks = json.map{
-                    Task(
-                        id:    $0["id"].int,
-                        name:  $0["name"].string,
-                        state: $0["state"].int
-                    ) }
-                print("The tasks are: \(self.tasks)")
-            }
-        }
         
-        task.resume()
+        Alamofire.request(.GET, Config.tasksUrl)
+            .responseJSON { response in
+                if let data = response.data {
+                    let json = JSON(data: data)["data"].arrayValue
+                    self.tasks = json.map{
+                        Task(
+                            id:    $0["id"].int,
+                            name:  $0["name"].string,
+                            state: $0["state"].int
+                        ) }
+                    NSNotificationCenter.defaultCenter().postNotificationName("Reload Tasks", object: self)
+                }
+        }
     }
     
     func retrieveFromFile() {

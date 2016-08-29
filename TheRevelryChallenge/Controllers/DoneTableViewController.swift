@@ -15,18 +15,19 @@ class DoneTableViewController: UITableViewController {
     var isCancelledTapped: Bool = false
     var changeStateTimer: NSTimer = NSTimer()
     
-    
     var tasksController: TasksController {
         get { return (UIApplication.sharedApplication().delegate as! AppDelegate).taskController }
     }
     
-    var tasks: [Task] {
-        get {
-            return tasksController.tasks.filter { $0.state == 1 }
-        }
-    }
+    var tasks: [Task] { get { return tasksController.tasks.filter { $0.state == 1 } } }
     
     // MARK: Lifecycle Methods
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.reloadTable), name: "Reload Tasks", object: nil)
+    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         tableView.reloadData()
@@ -90,20 +91,13 @@ class DoneTableViewController: UITableViewController {
         tasksController.changeTaskState(selectedTaskId!)
         navigationItem.rightBarButtonItem = nil
         
-        tableView.reloadData()
-        
         selectedTaskId = nil
         isCancelledTapped = false
+        tableView.reloadData()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func reloadTable() {
+        tableView.reloadData()
     }
-    */
 
 }

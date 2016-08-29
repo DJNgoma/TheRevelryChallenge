@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		168DAF6D1D7182C200D12F0B /* TheRevelryChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DAF6C1D7182C200D12F0B /* TheRevelryChallengeTests.swift */; };
 		169FF4651D718605002207FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF45C1D718605002207FB /* AppDelegate.swift */; };
-		169FF4661D718605002207FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169FF45D1D718605002207FB /* Assets.xcassets */; };
 		169FF4671D718605002207FB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 169FF45E1D718605002207FB /* Info.plist */; };
 		169FF4681D718605002207FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169FF4601D718605002207FB /* LaunchScreen.storyboard */; };
 		169FF4691D718605002207FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169FF4621D718605002207FB /* Main.storyboard */; };
@@ -21,6 +20,7 @@
 		169FF47E1D71A282002207FB /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF47D1D71A282002207FB /* EditTaskViewController.swift */; };
 		169FF4821D72A4DF002207FB /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FF4811D72A4DF002207FB /* TaskTableViewCell.swift */; };
 		169FF4841D72B45F002207FB /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 169FF4831D72B45F002207FB /* tasks.json */; };
+		169FF4861D73EF36002207FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169FF4851D73EF36002207FB /* Assets.xcassets */; };
 		A4AE076E2A2BD9BC62B0665E /* Pods_TheRevelryChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC53E79FB2737C3F26FD2566 /* Pods_TheRevelryChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,6 @@
 		168DAF6C1D7182C200D12F0B /* TheRevelryChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheRevelryChallengeTests.swift; sourceTree = "<group>"; };
 		168DAF6E1D7182C200D12F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		169FF45C1D718605002207FB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		169FF45D1D718605002207FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		169FF45E1D718605002207FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		169FF4611D718605002207FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		169FF4631D718605002207FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		169FF47D1D71A282002207FB /* EditTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 		169FF4811D72A4DF002207FB /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		169FF4831D72B45F002207FB /* tasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
+		169FF4851D73EF36002207FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6154770C89E5EB5CC2343D59 /* Pods_TheRevelryChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheRevelryChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F3E87A4C2AB0EFDC1634B4D /* Pods-TheRevelryChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRevelryChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheRevelryChallenge/Pods-TheRevelryChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		A7F2F771AE6A164F102929FE /* Pods-TheRevelryChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRevelryChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheRevelryChallenge/Pods-TheRevelryChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 			children = (
 				169FF46A1D718671002207FB /* Constants.swift */,
 				169FF45C1D718605002207FB /* AppDelegate.swift */,
-				169FF45D1D718605002207FB /* Assets.xcassets */,
 				169FF45E1D718605002207FB /* Info.plist */,
+				169FF4851D73EF36002207FB /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -200,12 +200,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 168DAF711D7182C200D12F0B /* Build configuration list for PBXNativeTarget "TheRevelryChallenge" */;
 			buildPhases = (
+				49E2478DD3F48FFD7642AAAA /* 📦 Check Pods Manifest.lock */,
 				B8933235C51EF41BC4C0047E /* [CP] Check Pods Manifest.lock */,
 				168DAF501D7182C200D12F0B /* Sources */,
 				168DAF511D7182C200D12F0B /* Frameworks */,
 				168DAF521D7182C200D12F0B /* Resources */,
 				EAB5E3B10B24F3EDFC1FA8B0 /* [CP] Embed Pods Frameworks */,
 				F9EB8340DA5123BEAB927D0D /* [CP] Copy Pods Resources */,
+				E6CF275D2B12B1285AEF0805 /* 📦 Embed Pods Frameworks */,
+				DB46D2D1145969F1AD1A71C3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,9 +285,9 @@
 			files = (
 				169FF4681D718605002207FB /* LaunchScreen.storyboard in Resources */,
 				169FF4671D718605002207FB /* Info.plist in Resources */,
-				169FF4661D718605002207FB /* Assets.xcassets in Resources */,
 				169FF4691D718605002207FB /* Main.storyboard in Resources */,
 				169FF4841D72B45F002207FB /* tasks.json in Resources */,
+				169FF4861D73EF36002207FB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +314,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheRevelryChallengeTests/Pods-TheRevelryChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49E2478DD3F48FFD7642AAAA /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		7D62723CC818661C3325465F /* [CP] Embed Pods Frameworks */ = {
@@ -343,6 +361,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		DB46D2D1145969F1AD1A71C3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheRevelryChallenge/Pods-TheRevelryChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E0AFAD505FA31FAC1E2D36A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,6 +389,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6CF275D2B12B1285AEF0805 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheRevelryChallenge/Pods-TheRevelryChallenge-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EAB5E3B10B24F3EDFC1FA8B0 /* [CP] Embed Pods Frameworks */ = {

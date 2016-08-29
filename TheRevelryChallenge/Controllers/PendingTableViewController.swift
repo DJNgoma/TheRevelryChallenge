@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PendingTableViewController: UITableViewController, UITextFieldDelegate {
+class PendingTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource , UITextFieldDelegate {
     
     // MARK: Local Variables
     
@@ -24,9 +24,8 @@ class PendingTableViewController: UITableViewController, UITextFieldDelegate {
     }
     
     var addBarButtonItem: UIBarButtonItem {
-        get { return UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(self.pendingBarButtonItemAction(_:))) }
+        get { return UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(self.addTask)) }
     }
-    
     
     var isCancelledTapped: Bool = false
     var changeStateTimer: NSTimer = NSTimer()
@@ -35,23 +34,19 @@ class PendingTableViewController: UITableViewController, UITextFieldDelegate {
     // MARK: IBOutlets
     
     @IBOutlet var addTaskTextField: UITextField!
-    
-    // MARK: IBActions
-    
-    @IBAction func pendingBarButtonItemAction(sender: UIBarButtonItem) {
-        addTask(addTaskTextField)
-    }
-    
+    @IBOutlet var tableView: UITableView!
     
     // MARK: Lifecycle Methods
     
     override func viewDidLoad() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.reloadTable), name: "Reload Tasks", object: nil)
+        
         let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
         dispatch_async(dispatch_get_global_queue(priority, 0)) {
-            self.tasksController.retrieveFromFile()
-            dispatch_async(dispatch_get_main_queue()) {
-            }
+            self.tasksController.retrieveFromNetwork()
         }
+        navigationItem.rightBarButtonItem = addBarButtonItem
+
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -59,15 +54,15 @@ class PendingTableViewController: UITableViewController, UITextFieldDelegate {
     }
     // MARK: - Table view data source
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Tasks", forIndexPath: indexPath) as! TaskTableViewCell
         cell.cancelButton.hidden = true
         
@@ -76,7 +71,7 @@ class PendingTableViewController: UITableViewController, UITextFieldDelegate {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedTaskId = (tasks[indexPath.row].id! - 1)
         
         let cellCancelButton = (tableView.cellForRowAtIndexPath(indexPath) as! TaskTableViewCell).cancelButton
@@ -86,7 +81,7 @@ class PendingTableViewController: UITableViewController, UITextFieldDelegate {
         
     }
     
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             tasksController.deleteTask(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
@@ -97,7 +92,7 @@ class PendingTableViewController: UITableViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if textField == addTaskTextField {
-            addTask(textField)
+            addTask()
         }
         
         return true
@@ -133,8 +128,9 @@ class PendingTableViewController: UITableViewController, UITextFieldDelegate {
         selectedTaskId = nil
     }
     
-    func addTask(textField: UITextField) {
-        let text = textField.text
+    func addTask() {
+        
+        let text = addTaskTextField.text
         if text != "" {
             tasksController.addNewTask(text)
             
@@ -143,10 +139,15 @@ class PendingTableViewController: UITableViewController, UITextFieldDelegate {
             tableView.beginUpdates()
             tableView.insertRowsAtIndexPaths(insertIndexPaths, withRowAnimation: .Right)
             tableView.endUpdates()
-            
-            textField.resignFirstResponder()
-            textField.text = ""
+            addTaskTextField.resignFirstResponder()
+            addTaskTextField.text = ""
         }
     }
+    
+    func reloadTable() {
+        tableView.reloadData()
+    }
+    
+    
     
 }

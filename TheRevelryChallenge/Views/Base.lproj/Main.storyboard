@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -25,58 +26,72 @@
             <point key="canvasLocation" x="-16" y="330"/>
         </scene>
         <!--Pending-->
-        <scene sceneID="3Ur-g1-ofo">
+        <scene sceneID="9lr-gP-NXe">
             <objects>
-                <tableViewController id="org-Yh-v1g" customClass="PendingTableViewController" customModule="TheRevelryChallenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="av3-Vw-hzh">
+                <viewController id="fVs-l1-XQR" customClass="PendingTableViewController" customModule="TheRevelryChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L9L-wn-EW6"/>
+                        <viewControllerLayoutGuide type="bottom" id="uGM-6x-sFh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A4c-tk-Ofi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <textField key="tableHeaderView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a new task..." textAlignment="natural" minimumFontSize="17" id="kmh-0h-bpU">
-                            <rect key="frame" x="0.0" y="64" width="320" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <outlet property="delegate" destination="org-Yh-v1g" id="nlr-zK-QVm"/>
-                            </connections>
-                        </textField>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Tasks" id="pC5-an-Gdo" customClass="TaskTableViewCell" customModule="TheRevelryChallenge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="122" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pC5-an-Gdo" id="dRI-aH-Fu7">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccC-lz-dcX">
-                                            <rect key="frame" x="264" y="5" width="48" height="30"/>
-                                            <state key="normal" title="Cancel"/>
-                                        </button>
-                                    </subviews>
-                                </tableViewCellContentView>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a new task..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TIu-HN-Q7A">
+                                <rect key="frame" x="16" y="72" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="cancelButton" destination="ccC-lz-dcX" id="YG4-kZ-Z5Q"/>
+                                    <outlet property="delegate" destination="fVs-l1-XQR" id="eLC-3v-fcm"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="org-Yh-v1g" id="Bis-oj-SRu"/>
-                            <outlet property="delegate" destination="org-Yh-v1g" id="dJZ-pw-zHC"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Pending" id="Jqy-N3-MiK">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="ezd-fy-TRY">
-                            <connections>
-                                <action selector="pendingBarButtonItemAction:" destination="org-Yh-v1g" id="ZN6-xy-v0o"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jsj-aE-YmK">
+                                <rect key="frame" x="-4" y="110" width="328" height="370"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Tasks" id="wdA-gI-S96" customClass="TaskTableViewCell" customModule="TheRevelryChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="328" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wdA-gI-S96" id="i48-zW-jFm">
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3e-fe-mTj">
+                                                    <rect key="frame" x="272" y="7" width="48" height="30"/>
+                                                    <state key="normal" title="Cancel"/>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cancelButton" destination="n3e-fe-mTj" id="eEX-ni-qQl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fVs-l1-XQR" id="wdA-XA-YV9"/>
+                                    <outlet property="delegate" destination="fVs-l1-XQR" id="rGA-yi-6dW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="TIu-HN-Q7A" secondAttribute="leading" id="Huc-PR-vKB"/>
+                            <constraint firstItem="jsj-aE-YmK" firstAttribute="leading" secondItem="A4c-tk-Ofi" secondAttribute="leadingMargin" constant="-20" id="K20-VW-2dJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TIu-HN-Q7A" secondAttribute="trailing" id="Mqe-va-JLv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jsj-aE-YmK" secondAttribute="trailing" constant="-20" id="WbJ-bh-ysE"/>
+                            <constraint firstItem="jsj-aE-YmK" firstAttribute="top" secondItem="TIu-HN-Q7A" secondAttribute="bottom" constant="8" id="fs5-SV-QY7"/>
+                            <constraint firstItem="TIu-HN-Q7A" firstAttribute="top" secondItem="L9L-wn-EW6" secondAttribute="bottom" constant="8" symbolic="YES" id="fvd-Jt-E6H"/>
+                            <constraint firstItem="uGM-6x-sFh" firstAttribute="top" secondItem="jsj-aE-YmK" secondAttribute="bottom" constant="-49" id="lMw-YJ-DNj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pending" id="lAL-cn-n02"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="addTaskTextField" destination="kmh-0h-bpU" id="K0c-S7-ak6"/>
+                        <outlet property="addTaskTextField" destination="TIu-HN-Q7A" id="AN5-bA-OWR"/>
+                        <outlet property="tableView" destination="jsj-aE-YmK" id="W0L-HI-zjP"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w5P-xC-hlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nyh-kA-UKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1017" y="83"/>
         </scene>
@@ -122,7 +137,7 @@
         <scene sceneID="SQc-hU-XgZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q7W-wN-3wQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="pending" id="cF4-SL-RIg"/>
+                    <tabBarItem key="tabBarItem" title="pending" image="Pending" id="cF4-SL-RIg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DwM-w4-Zc5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -130,7 +145,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="org-Yh-v1g" kind="relationship" relationship="rootViewController" id="XcW-7C-IIQ"/>
+                        <segue destination="fVs-l1-XQR" kind="relationship" relationship="rootViewController" id="l6d-Lx-b4t"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2FH-yl-tMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -141,7 +156,7 @@
         <scene sceneID="S0N-f8-V2X">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XB2-fn-LwK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="done" id="37F-ge-sAa"/>
+                    <tabBarItem key="tabBarItem" title="done" image="Done" id="37F-ge-sAa"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Upp-Fj-H5w">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -157,4 +172,8 @@
             <point key="canvasLocation" x="485" y="609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Done" width="30" height="30"/>
+        <image name="Pending" width="30" height="30"/>
+    </resources>
 </document>
